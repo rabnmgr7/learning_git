@@ -121,6 +121,7 @@ def perform_login(session, username, password):
         response = session.get(css_url, headers=headers5, allow_redirects=False)
         html_content += response.text
 
+        print(html_content)
         #status_urls  = redirect_url + '/rpSys.html'
         #response = session.get(status_urls, headers=headers)
         #html_content = response.text
